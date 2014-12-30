@@ -15,7 +15,7 @@ mepHuman <- function(m.data, gui = FALSE) {
     pfam.ids <- pfam.objs$ids
     
     # Load the pfam table
-    data(pfam.df, package = "covert", envir = environment())
+    data(pfam.df, package = "GenoView", envir = environment())
     pfam.gr <- GRanges(seqnames = as.character(pfam.df[,"chr"]), 
                        IRanges(start = pfam.df[,"start"], 
                                end = pfam.df[,"end"]), 
