@@ -1,0 +1,23 @@
+Package: GenoView
+Type: Package
+Title: Condensed, overlapped plotting of genomic data tracks
+Version: 1.0.0
+Date: 2014-12-29
+Author: Sharon Lee, Dennis Wang
+Maintainer: Sharon Lee <s274lee@uwaterloo.ca>
+Description: Superimposing input data over existing genomic references
+        allows for fast, accurate visual comparisons. The GenoView
+        package is a novel bioinformatics package which condenses
+        genomic data tracks to offer a comprehensive view of genetic
+        variants. Its main function is to display mutation data over
+        exons and protein domains, which easily identifies potential
+        genomic locations of interest.
+biocViews: Visualization
+Depends: R (>= 2.10), gridExtra, GenomicRanges
+Imports: ggbio, ggplot2, grid, biovizBase
+Suggests: TxDb.Hsapiens.UCSC.hg19.knownGene, PFAM.db, AnnotationDbi,
+        gtable, gWidgets, gWidgetsRGtk2, RGtk2, RColorBrewer
+License: GPL-3
+LazyData: Yes
+Collate: 'Domain.R' 'GUI.R' 'Main.R' 'Text_interface.R'
+Packaged: 2014-10-14 04:18:02 UTC; biocbuild

@@ -1,0 +1,60 @@
+## ===============================================
+## Imports
+## ===============================================
+
+#import(TxDb.Hsapiens.UCSC.hg19.knownGene)
+#importFrom(PFAM.db, PFAMID, PFAMDE)
+importFrom(biovizBase, crunch, mold, getGaps)
+#importFrom(GenomicRanges, subsetByOverlaps, countOverlaps, 
+#seqnames, ranges, start, end, width, strand, values, seqlengths)
+import(GenomicRanges)
+importFrom(ggplot2, ggplot, geom_text, geom_abline, 
+           geom_rect, ggsave, 
+           aes, aes_string, coord_cartesian, theme, 
+           element_blank, element_text, element_rect, 
+           facet_wrap, ggplotGrob)
+importFrom(ggbio, layout_karyogram, 
+           geom_arrow, scale_x_sequnit)
+
+importFrom(grid, unit, unit.pmax, grid.draw, grid.newpage, 
+           textGrob, gpar)
+
+import(gridExtra)
+#importFrom(gtable, gtable_add_grob)
+#importFrom(RColorBrewer, brewer.pal)
+
+#importFrom(gWidgets, gbutton, gcheckbox, gcombobox, 
+#           gedit, gformlayout, gframe, ggraphics, ggroup, 
+#           glabel, glayout, gnotebook, gradio, gstatusbar, 
+#           gtable, gwindow, guiToolkit, gmessage, gconfirm, 
+#           addHandlerClicked, addHandlerUnrealize, 
+#           size, svalue, font, enabled, addSpring)
+
+#import(gWidgetsRGtk2)
+#import(RGtk2)
+#import(cairoDevice)
+
+## ===============================================
+## Exports
+## ===============================================
+
+# Main
+export(mepHuman, 
+       intSel, 
+       makeGR, 
+       plotExonRect, 
+       mutExonPlot)
+
+# GUI
+export(mepGUI, 
+       notebookVis)
+
+# Text Interface
+export(mepTxtInt, 
+       printOption, 
+       colSel)
+
+# Domain
+export(makePFAMObjs, 
+       updatePFAM, 
+       PFAMIDE)
