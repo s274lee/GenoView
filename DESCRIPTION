@@ -1,7 +1,7 @@
 Package: GenoView
 Type: Package
 Title: Condensed, overlapped plotting of genomic data tracks
-Version: 1.1.2
+Version: 1.3.0
 Date: 2014-12-29
 Author: Sharon Lee, Dennis Wang
 Maintainer: Sharon Lee <s274lee@uwaterloo.ca>
