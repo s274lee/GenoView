@@ -19,5 +19,5 @@ Suggests: TxDb.Hsapiens.UCSC.hg19.knownGene, PFAM.db, AnnotationDbi,
         gtable, gWidgets, gWidgetsRGtk2, RGtk2, RColorBrewer
 License: GPL-3
 LazyData: Yes
-Collate: 'Domain.R' 'GUI.R' 'Main.R' 'Text_interface.R'
+Collate: 'Domain.R' 'GUI.R' 'Main.R' 'Text_interface.R' 'zzz.R'
 PackageStatus: Deprecated
